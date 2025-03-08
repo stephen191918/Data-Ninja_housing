@@ -77,25 +77,25 @@ We grouped the houses depends on their salePrice
 
 ## Model Type:
 
-1. Linear regression model
+### 1. Linear regression model-
 We employed linear regression, leveraging the feature set curated by the Lasso model. This strategic approach yield the most favorable performance on Kaggle, surpassing the efficacy of all other models we explored in our analysis.
 
-2. Random Forest
+### 2. Random Forest
 Despite diligent optimization efforts, the resultant score yirld was 1.01025, indicating a notable performance gap compared to the top-performing model. This disparity underscores the importance of our meticulous model selection and parameter tuning processes in pursuit of optimal performance.
 
-3. XGboost
+### 3. XGboost
 The first XGBoost model we used only tuned the learning rate parameter. We attempted to find the optimal learning rate within the range of 0.0001 to 0.05.
 However, even after finding the best one, the score on Kaggle remained very high (1.02). Consequently, we decided to tune more parameters, as found in this code sample. After adding additional parameter settings, we attempted to tune the learning rate once again, The following graph depicts the relationship between learning rate and MAE. We concluded that the optimal learning rate is 0.008199999999999999, and retrained the model achieved a better score than the previous attempt.
 
 <img width="591" alt="learning rate" src="https://github.com/user-attachments/assets/8c2d785a-6233-4e92-b265-2821887fb333" />
 
-4. Keras
+### 4. Keras
 Keras has the second-highest score among all the models we tried. We tuned parameters such as optimizer, loss function, units_layer, activation, batch size, and validation split to find the combination with the smallest MAE. The following table indicates the top 15 combinations out of 217, which have the least MAE.
 According to these results, we observed some common settings, such as optimizer = SGD, loss function = mean_squared_error, and activation = sigmoid. With these findings, we retrained the Keras model using the optimal combination and achieved the second-highest score.
 
 <img width="603" alt="Screenshot 2025-03-07 at 11 12 28 PM" src="https://github.com/user-attachments/assets/5dcb33a9-a146-4c66-9213-5cd6d960bf52" />
 
-5. Torch
+### 5. Torch
 Our implementation of the Torch model employed Rectified Linear Unit (ReLU) activation functions across two layers, with the Adam optimizer and Mean Squared Error (MSE) as the loss function. Despite these strategic choices, the performance on Kaggle fell short of expectations.
 
 ---
