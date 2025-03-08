@@ -65,7 +65,8 @@ Houses equipped with central air conditioning systems consistently exhibit highe
 
 - We utilized five model specifications and submitted predictions. The scores from Kaggle are as follows:
 
-![score](https://github.com/user-attachments/assets/d47b9bb9-3440-462d-87da-07d8af8f35b9)
+<img width="610" alt="Screenshot 2025-03-07 at 10 46 31 PM" src="https://github.com/user-attachments/assets/ae5974fd-3252-46fd-9096-b38263912d41" />
+
 
 ## **Model Performance**
 
